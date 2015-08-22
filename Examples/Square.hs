@@ -19,4 +19,4 @@ fig = square1 ++ square2 ++ square3 ++ square4
 
 tangle = Hastangle ini ini focs
     where ini  = map (\(a, b) -> (p2 a, p2 b)) fig
-          focs = [take 4 ini, take 4 $ drop 4 ini, take 4 $ drop 8 ini, take 4 $ drop 12 ini]
+          focs = groupIn 4 ini

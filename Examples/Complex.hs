@@ -21,4 +21,4 @@ fig = triangle1 ++ triangle2 ++ triangle3 ++ triangle4 ++ triangle5 ++ triangle6
 
 tangle = Hastangle ini ini focs
     where ini  = map (\(a, b) -> (p2 a, p2 b)) fig
-          focs = [take 3 ini, take 3 $ drop 3 ini, take 3 $ drop 6 ini, take 3 $ drop 9 ini, take 3 $ drop 12 ini, take 3 $ drop 15 ini]
+          focs = groupIn 3 ini
