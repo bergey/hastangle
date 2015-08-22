@@ -17,4 +17,4 @@ import qualified Examples.Complex as C
 --main = defaultMain $ colorize [red, green, blue] $ figure $ fromShape $ square 1
 
 
-main = defaultMain $ colorizeSymmetric [black, red] $ (iterations (paradox 0.08) (C.tangle)) !! 100
+main = defaultMain $ colorizeSymmetric [black, blue] $  (iterations (paradox 0.08) (C.tangle)) !! 100
